@@ -9,7 +9,7 @@ import store from "../redux/store";
 // @components
 import ToastAlert from "../components/common/ToastAlert";
 import "react-toastify/dist/ReactToastify.css";
-import LoadingSpinner from "../components/common/loadingSpinner";
+// import LoadingSpinner from "../components/common/loadingSpinner";
 
 const App = () => {
   useEffect(() => {
