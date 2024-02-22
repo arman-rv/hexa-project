@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { onThemeChange } from "../../redux/darkMode";
 import Copyrights from "../../components/common/Copyrights";
 import FieldInput from "../../components/common/FieldInput";
-import loginImage from "../../assets/image/Login11.svg";
+import loginImage from "../../assets/image/login11.svg";
 import loginDark from "../../assets/image/loginDark.svg";
 import { setItem } from "../../core/services/local-storage/storage.services";
 import {LoadingSpinner} from "../../components/common/loadingSpinner";
