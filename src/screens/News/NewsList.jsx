@@ -8,7 +8,7 @@ import {
 } from "../../components/News";
 import { NewsCard } from "../../components/Landing";
 import getNewsApi from "../../core/services/api/GetData/getNewsData/allNewsApi";
-import {LoadingSpinner} from "../../components/common/loadingSpinner";
+import {LoadingSpinner} from "../../components/common/LoadingSpinner";
 
 import bgNews from "../../assets/image/bg-ListHero.svg";
 import bgNewsDark from "../../assets/image/bg-ListHero-dark.svg";

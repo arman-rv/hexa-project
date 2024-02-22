@@ -8,7 +8,7 @@ import DetailsBox from "../../components/CourseDetails/DetailsBox";
 
 import Course from "../../components/course/Course";
 import TabsContent from "../../components/CourseDetails/TabsContent";
-import {LoadingSpinner} from "../../components/common/loadingSpinner";
+import {LoadingSpinner} from "../../components/common/LoadingSpinner";
 
 import GetCourseDetails from "../../core/services/api/GetData/getCourseDetailsById";
 

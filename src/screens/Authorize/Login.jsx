@@ -12,7 +12,7 @@ import FieldInput from "../../components/common/FieldInput";
 import loginImage from "../../assets/image/login11.svg";
 import loginDark from "../../assets/image/loginDark.svg";
 import { setItem } from "../../core/services/local-storage/storage.services";
-import {LoadingSpinner} from "../../components/common/loadingSpinner";
+import {LoadingSpinner} from "../../components/common/LoadingSpinner";
 import { toast } from "react-toastify";
 
 const Login = () => {

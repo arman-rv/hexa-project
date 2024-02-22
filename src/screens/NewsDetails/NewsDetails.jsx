@@ -2,7 +2,7 @@ import React, { useState, Fragment, useEffect } from "react";
 import {  useParams } from "react-router-dom";
 import { motion, useScroll, useSpring } from "framer-motion";
 
-import {LoadingSpinner} from "../../components/common/loadingSpinner";
+import {LoadingSpinner} from "../../components/common/LoadingSpinner";
 import Rate from "../../components/common/Rate";
 import handleNewsRate from "../../core/services/api/PostData/addNewsRate";
 

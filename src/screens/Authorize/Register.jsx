@@ -13,7 +13,7 @@ import Copyrights from "../../components/common/Copyrights";
 
 import RegisterImage from "../../assets/image/RegisterNew.svg";
 import RegisterDark from "../../assets/image/registerDark.svg";
-import {LoadingSpinner} from "../../components/common/loadingSpinner";
+import {LoadingSpinner} from "../../components/common/LoadingSpinner";
 
 const Register = () => {
   const htmlTag = document.querySelector("html");

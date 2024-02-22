@@ -13,7 +13,7 @@ import ForgetPasswordDark from "../../assets/image/forgetPasswordDark.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { onThemeChange } from "../../redux/darkMode";
 import Copyrights from "../../components/common/Copyrights";
-import {LoadingSpinner} from "../../components/common/loadingSpinner";
+import {LoadingSpinner} from "../../components/common/LoadingSpinner";
 
 const VerificationSteps = () => {
   const navigator = useNavigate();
