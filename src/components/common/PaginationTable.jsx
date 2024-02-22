@@ -4,7 +4,7 @@ import ReactPaginate from "react-paginate";
 
 import WhishListTable from "./WhisListTable";
 import AllCoursesTable from "./AllCoursesTable";
-import MyReserveCoursesListTable from "./myReserveCoursesListTable";
+import MyReserveCoursesListTable from "./MyReserveCoursesListTable";
 const PaginationTable = ({
   data,
   itemsPerPage,
