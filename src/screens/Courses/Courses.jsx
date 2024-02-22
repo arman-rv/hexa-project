@@ -9,7 +9,7 @@ import {
 import bgCourses from "../../assets/image/bg-ListHero.svg";
 import bgCoursesDark from "../../assets/image/bg-ListHero-dark.svg";
 import fetchCoursesApi from "../../core/services/api/GetData/allCoursesApi";
-import LoadingSpinner from "../../components/common/loadingSpinner";
+import {LoadingSpinner} from "../../components/common/loadingSpinner";
 const Courses = () => {
   const searchRef = useRef();
   const [showGrid, setShowGrid] = useState(false);
