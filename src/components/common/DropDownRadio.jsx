@@ -1,5 +1,5 @@
 import React from "react";
-import CheckboxInput from "./checkboxInput";
+import CheckboxInput from "./CheckboxInput";
 import { useState } from "react";
 
 const DropDown = ({
