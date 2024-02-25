@@ -5,7 +5,7 @@ import workshop from "../../assets/image/Coding workshop-rafiki 1.svg";
 
 const CoursesHero = ({typeWriterWords}) => {
   return (
-    <div className="w-full lg:flex-row flex relative flex-col-reverse justify-around items-center">
+    <div className="w-full lg:flex-row flex relative flex-col-reverse justify-around items-center px-6 text-center">
       <HeroSectionInfo
         typeWriterWords={typeWriterWords}
         upperTitle={"مهمه از کی یاد می گیری!!"}

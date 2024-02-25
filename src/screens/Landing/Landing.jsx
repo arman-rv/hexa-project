@@ -11,7 +11,7 @@ const Landing = () => {
       <Services />
       <CourseEducation />
       <Categories />
-      <OurTeachers/>
+      {/* <OurTeachers/> */}
       <News/>
       {/* <Suggestions/> */}
     </Fragment>

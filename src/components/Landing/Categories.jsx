@@ -25,14 +25,14 @@ const Categories = () => {
       <div className="lg:max-w-[1163px] mx-auto md:max-w-[760px] sm:max-w-[640px] mt-[-30px]">
         <Title inner={"دسته بندی ها "} className={"lg:mt-40 mt-20 lg:block"} />
         <ul className="relative flex flex-wrap md:flex-row justify-center gap-2 right mt-12 lg:mt-40">
-          <Category title={"ّFront-End"} image={webDesign} link={"/courses"} />
-          <Category title={"ّReactJS"} image={dataAnalysis} link={"/courses"} />
+          <Category title={"Front-End"} image={webDesign} link={"/courses"} />
+          <Category title={"Back-End"} image={dataAnalysis} link={"/courses"} />
           <Category
-            title={"ّNextJs"}
+            title={"UI/UX"}
             image={networkSecurity}
             link={"/courses"}
           />
-          <Category title={"JAVASCRIPTS"} image={game} link={"/courses"} />
+          <Category title={"Data-Science"} image={game} link={"/courses"} />
         </ul>
       </div>
     </Fragment>

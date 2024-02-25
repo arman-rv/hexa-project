@@ -51,7 +51,7 @@ const News = () => {
   });
   return (
     <section className="mb-28">
-      <div className=" w-[440px] md:w-[740px] relative mt-20 lg:m-auto  mx-auto lg:mt-56">
+      <div className=" w-[440px] md:w-[740px] relative mt-20 lg:m-auto  mx-auto lg:mt-56 max-[480px]:w-full max-[480px]:px-2">
         <Title inner={"اخبار و مقالات"} className={"title1"} />
         <Link to="/news" className={"text-newWhite hover:text-newWhite"}>
           <button className="absolute primary-btn w-auto h-10 bottom-[-20px] lg:w-56 lg:my-10  py-1 md:block lg:hidden left-3">
@@ -61,11 +61,11 @@ const News = () => {
       </div>
 
       <div className="news-wrapper ">{newsCardsMapper}</div>
-      <Link to="/news" className={"text-newWhite hover:text-newWhite"}>
+      {/* <Link to="/news" className={"text-newWhite hover:text-newWhite"}>
         <button className="primary-btn w-auto lg:w-56 lg:my-10 py-3 hidden md:hidden lg:block mx-auto">
           مشاهده ی همه
         </button>
-      </Link>
+      </Link> */}
     </section>
   );
 };

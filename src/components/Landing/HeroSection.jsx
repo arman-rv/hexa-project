@@ -10,7 +10,7 @@ import course from "../../assets/image/course-state.svg";
 import heroImage from "../../assets/image/hero-image.png";
 const HeroSection = () => {
   const text = [
-    " مرجع اموزش زنده و تعاملی دسترسی به بیش از هفت هزار ویدیوی اموزشی به زبان فارسی .",
+    " مرجع اموزش زنده با دسترسی به بیش از هفت هزار ویدیوی آموزشی به زبان فارسی.",
   ];
 
   const [Data, setData] = useState({});
@@ -36,25 +36,25 @@ const HeroSection = () => {
       <div className="hero-gradient">
         
         <h4>پلتفرم اموزش طراحی وب</h4>
-        <h2 className="text-[54px]">مرجع اموزش برنامه نویسی</h2>
+        <h2 className="text-[54px] max-[400px]:text-4xl">مرجع اموزش برنامه نویسی</h2>
         <AutoTypeWriter Text={text} className={"hero-type-writer"} />
-        
+        <div className="max-[400px]:pt-1"></div>
         <HeroSearchBox />
         <div className="information-section">
-          <div className="scale-[1.15]">
+          <div className="scale-[1.15] max-[400px]:scale-[1]">
             <img src={teacher} alt="مدرس" />
             <span>{Data.teacherCount?Data.teacherCount:'6'}</span>
-            <label>مدرس مجرب</label>
+            <label className="px-2">مدرس مجرب</label>
           </div>
           <div className="scale-[1.15]">
             <img src={course} alt="دوره" />
             <span>{Data.courseCount?Data.courseCount:'10'}</span>
-            <label>دوره آموزشی</label>
+            <label className="px-2">دوره آموزشی</label>
           </div>
           <div className="scale-[1.15]">
             <img src={student} alt="دانش آموز" />
             <span>{Data.studentCount?Data.studentCount: '23' }</span>
-            <label>نفر دانشجو</label>
+            <label className="px-2">نفر دانشجو</label>
           </div>
         </div>
        

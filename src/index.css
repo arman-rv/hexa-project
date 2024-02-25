@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html , body , :root {
+  overflow-x: hidden;
+}
+
 @layer base {
   @font-face {
     font-family: IRANSans;
@@ -192,10 +196,10 @@
 
   /* Hero Section */
   .hero-section-bg {
-    @apply flex rounded-bl-200px w-full h-100 overflow-hidden;
+    @apply flex rounded-bl-200px w-full h-100 overflow-hidden max-[400px]:rounded-bl-[180px];
 
     .hero-image {
-      @apply w-full absolute z-0 top-0 h-[95%] rounded-bl-200px;
+      @apply w-full absolute z-0 top-0 h-[95%] rounded-bl-200px max-[400px]:h-full;
     }
 
     .hero-gradient {
@@ -341,7 +345,8 @@
   }
 
   .news-wrapper {
-    @apply w-full md:w-[100%] md:h-[540px] lg:h-[360px] mt-20 flex relative mx-auto md:mt-20 lg:mt-10 px-4 h-[520px] lg:gap-10 md:gap-10 md:my-0 items-center justify-center flex-col gap-10 md:flex-col lg:flex-row;
+    @apply w-full md:w-[100%] md:h-[540px] lg:h-[360px] mt-20 flex relative mx-auto md:mt-20 lg:mt-10 px-4 h-[520px] lg:gap-10 md:gap-10 md:my-0 items-center justify-center flex-col gap-10 md:flex-col lg:flex-row
+    max-[480px]:w-full;
   }
 
   .news-image {
@@ -414,7 +419,7 @@
     @apply block;
 
     .course-box {
-      @apply w-10/12 2xl:max-w-6xl xl:max-w-4xl float-right lg:max-w-2xl md:max-w-xl max-w-lg flex max-h-96 h-72 justify-start mr-8 ml-auto;
+      @apply w-full 2xl:max-w-6xl xl:max-w-4xl float-right lg:max-w-2xl md:max-w-xl max-w-lg flex max-h-96 h-72 justify-start mr-8 ml-auto;
 
       .course-body {
         @apply w-9/12 px-5;

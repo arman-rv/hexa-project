@@ -218,7 +218,7 @@
     } */
     .skeleton .news-name.skeleton-handler{
         width: 150%;
-        @apply h-8 ;
+        @apply h-8 max-[550px]:w-full mb-1;
     }
     .news-card .news-view {
         @apply md:absolute md:top-10 md:right-0 lg:top-12 lg:text-base;
@@ -234,8 +234,8 @@
 
     .skeleton .news-description.skeleton-handler{
         height:50px;
-        width: 180% !important;
-        @apply mb-4 ;
+        /* width: 180%; */
+        @apply mb-4 w-[180%] max-[550px]:w-full;
     }
     .news-card .news-description {
         @apply pt-5  ;

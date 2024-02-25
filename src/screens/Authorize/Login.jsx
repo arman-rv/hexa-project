@@ -79,7 +79,8 @@ const Login = () => {
                 alt=""
               />
             </div>
-            <div className="bg-[#ECE9FF] dark:bg-darkblue2 rounded-md rounded-e-xl -top-10 md:top-0 w-[400px] h-[540px] md:block md:w-[800px] lg:h-full absolute">
+
+            <div className="bg-[#ECE9FF] dark:bg-darkblue2 rounded-md rounded-e-xl -top-10 md:top-0 w-[395px] h-[540px] md:block md:w-[800px] lg:h-full absolute">
               <Link to="/">
                 {" "}
                 <h1
@@ -171,7 +172,7 @@ const Login = () => {
                         value=" ورود به سایت"
                         className="w-[270px] absolute top-64 right-[60px] py-[10px]  rounded-md text-sm text-[#f4f1ff] bg-gradient-to-tr  from-[#7a0cff] to-[#4739ff] cursor-pointer hover:bg-gradient-to-tr hover:from-[#4739ff] hover:to-[#7a0cff]"
                       />
-                      {/* <Link to={"/authorize/login"} className="pointer w-100 h-100 d-inline-block">ورود به سایت</Link> */}
+                    
                     </Form>
                   </Formik>
                   <Link to="/authorize/Verification">

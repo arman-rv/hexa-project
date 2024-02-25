@@ -145,7 +145,7 @@ const Courses = () => {
         courseRate={data.courseRate}
         studentCount={data.currentRegistrants}
         price={data.cost}
-        addClass={"h-[441px] mx-auto"}
+        addClass={"h-[441px] mx-auto max-[530px]:w-full"}
         image={data.tumbImageAddress}
         userIsLiked={data.userIsLiked}
         userIsDissLiked={data.currentUserDissLike}
@@ -181,7 +181,7 @@ const Courses = () => {
         />
 
         <div className="flex w-full flex-wrap ">
-          <div className="flex md:flex-row items-start flex-col w-full px-20 ">
+          <div className="flex md:flex-row items-start flex-col w-full px-20 max-[530px]:px-10 max-[450px]:px-4 max-[385px]:px-1 max-[610px]:px-18">
             <FiltersOptions
               data={allData}
               setFilterDiv={setFilterDiv}
@@ -204,7 +204,7 @@ const Courses = () => {
               }
               data-aos="zoom-in"
             >
-              <span className="m-1 text-xl absolute -top-10 right-0 text-slate-950 dark:text-slate-400">
+              <span className="max-lg:hidden m-1 text-xl absolute -top-10 right-0 text-slate-950 dark:text-slate-400">
                 {data.length} دوره مرتبط
               </span>
 

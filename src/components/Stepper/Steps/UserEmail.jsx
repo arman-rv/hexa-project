@@ -32,7 +32,7 @@ const UserEmail = () => {
               ایمیل و کدملی خود را وارد کنید.
             </h2>
             <FieldInput
-              placeholder={"Hexaesquad@gmail.com  "}
+              placeholder={"example@gmail.com  "}
               name="email"
               type={"email"}
             />

@@ -94,7 +94,7 @@ const Register = () => {
               />
             </div>
 
-            <div className="bg-[#ECE9FF] dark:bg-darkblue2 rounded-md rounded-e-xl -top-10 md:top-0 w-[400px] h-[540px] md:block md:w-[800px] lg:h-full md:h-[520px] absolute ">
+            <div className="bg-[#ECE9FF] dark:bg-darkblue2 rounded-md rounded-e-xl -top-10 md:top-0 w-[390px] h-[540px] md:block md:w-[800px] lg:h-full md:h-[520px] absolute ">
               <Link to="/">
                 {" "}
                 <h1 className="bi bi-house-door md:text-2xl text-xl dark:text-indigo-300 text-[#6652eb] absolute left-4 top-4"></h1>

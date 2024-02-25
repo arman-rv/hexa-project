@@ -13,7 +13,7 @@ const FiltersBTN = ({
   const [selectedOptionsSType, setSelectedOptionSType] = useState(null);
   const [selectedOptionsSCal, setSelectedOptionSCal] = useState(null);
   const [SortingTypeV, setSortingTypeV] = useState([
-    { value: "Active", label: "دوره های فعال" },
+    { value: "Active", label: "فعال"},
     { value: "LastUpdate", label: "آخرین تغییرات" },
     { value: "Cost", label: "بر اساس قیمت" },
     { value: "CourseRate", label: "بر اساس محبوبیت " },
@@ -66,7 +66,7 @@ const FiltersBTN = ({
       <div className="flex gap-5 text-darkblue2 lg:mr-6 lg:w-6/12 w-full justify-center">
         <Select
           value={selectedOptionsSType}
-          placeholder={"دوره های فعال"}
+          placeholder={"فعال"}
           options={SortingTypeV}
           className="text-darkblue2 lg:w-2/3 w-full"
           onChange={STypeHandleChange}

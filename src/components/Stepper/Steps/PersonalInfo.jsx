@@ -62,7 +62,7 @@ const PersonalInfo = ({ phoneNumberValue, handleClick }) => {
               ایمیل و پسورد خود را وارد کنید
             </h2>
             <FieldInput
-              placeholder={"hexasquad@gmail.com"}
+              placeholder={"example@gmail.com"}
               name="gmail"
               type={"email"}
             />

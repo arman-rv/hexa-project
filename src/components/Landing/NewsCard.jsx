@@ -7,11 +7,11 @@ const NewsCard = ({ name, img, description, views, date, id, skeleton }) => {
   return (
     <div
       data-aos="zoom-in"
-      className=" relative rounded-xl bg-[#EAE5FF] dark:bg-[#13005A] shadow-shadow-auth hover:shadow-[#8b88c4] dark:hover:shadow-[#141339] duration-500 "
+      className=" relative rounded-xl bg-[#EAE5FF] dark:bg-[#13005A] shadow-shadow-auth hover:shadow-[#8b88c4] dark:hover:shadow-[#141339] duration-500 max-md:w-[85%] max-sm:w-full"
     >
       <div
         className={
-          " w-[440px] h-[210px]  md:h-[250px]  md:w-[600px] cursor-pointer rounded-xl " +
+          " w-full h-[210px]  md:h-[250px]  md:w-[600px] cursor-pointer rounded-xl " +
           (skeleton == true ? "skeleton" : "")
         }
       >
@@ -20,7 +20,7 @@ const NewsCard = ({ name, img, description, views, date, id, skeleton }) => {
             <h2 className="news-name md:text-lg text-base text-newPurple3 group-hover:text-newPurple2 skeleton-handler pl-6 h-14 dark:text-[#e9e8ff] dark:group-hover:text-[#F0E2FF]">
               {name ? name : ""}
             </h2>
-            <div className="flex flex-row">
+            <div className="flex flex-row" >
               <h2 className="news-view text-indigo-900 dark:text-indigo-200 text-xs mt-[2px] ml-2 skeleton-handler">
                 {" "}
                 <i className="bi bi-eye text-sm ml-1 dark:text-indigo-200 "></i>
@@ -32,7 +32,7 @@ const NewsCard = ({ name, img, description, views, date, id, skeleton }) => {
                 {date ? GregorianToSolar(date) : ""}
               </h2>
             </div>
-            <h2 className="news-description whitespace-pre-wrap md:text-base h-[80px] w-[95%] text-justify text-sm md:my-2 mt-2 pl-6 text-lightblue skeleton-handler dark:text-[#cbc7ff] dark:opacity-90 dark:group-hover:text-[#DEDCFF] opacity-60">
+            <h2 className="news-description whitespace-pre-wrap md:text-base h-[80px] w-[95%] text-justify text-sm md:my-2 mt-2 pl-6 text-lightblue skeleton-handler dark:text-[#cbc7ff] dark:opacity-90 dark:group-hover:text-[#DEDCFF] opacity-60  max-[550px]:w-[50%]">
               {description && description.length > 70 ? description.slice(0,100) + ' ...' : description}
             </h2>
             <div className="news-readMore flex flex-row absolute  md:mt-2 left-3  md:left-5 ">
