@@ -8,10 +8,11 @@ import {
 } from "../../components/News";
 import { NewsCard } from "../../components/Landing";
 import getNewsApi from "../../core/services/api/GetData/getNewsData/allNewsApi";
-import {LoadingSpinner} from "../../components/common/LoadingSpinner";
+import { LoadingSpinner } from "../../components/common/LoadingSpinner";
 
 import bgNews from "../../assets/image/bg-ListHero.svg";
 import bgNewsDark from "../../assets/image/bg-ListHero-dark.svg";
+import Course from "../../components/course/Course";
 
 const NewsList = () => {
   const typeWriterWords = [
@@ -40,11 +41,11 @@ const NewsList = () => {
     { skeleton: true },
   ]);
   const [filterDiv, setFilterDiv] = useState(false);
-  const [itemOffset, setItemOffset] = useState(0);
-  const countInPage = 5;
-  const endOffset = itemOffset + countInPage;
-  const currentItems = newsData.slice(itemOffset, endOffset);
-  const pageCount = Math.ceil(newsData.length / countInPage);
+  // const [itemOffset, setItemOffset] = useState(0);
+  // const countInPage = 5;
+  // const endOffset = itemOffset + countInPage;
+  // const currentItems = newsData.slice(itemOffset, endOffset);
+  // const pageCount = Math.ceil(newsData.length / countInPage);
   const [isLoading, setIsLoading] = useState(false);
   const [sortCal, setSortCal] = useState("InsertDate");
   const [sortType, setSortType] = useState("DESC");
@@ -86,20 +87,67 @@ const NewsList = () => {
     };
   }, []);
 
-  const newsCardsMapper = currentItems.map((item, index) => {
+  // const newsCardsMapper = currentItems.map((item, index) => {
+  //   return (
+  //     <NewsCard
+  //       key={index}
+  //       id={item.id}
+  //       img={item.currentImageAddressTumb}
+  //       name={item.title}
+  //       skeleton={item.skeleton}
+  //       description={item.miniDescribe}
+  //       views={item.currentView}
+  //       date={item.updateDate}
+  //     />
+  //   );
+  // });
+
+  // براررررررررررررررررررررررررررررررررررررررررر
+
+  const [data, setData] = useState([
+    { skeleton: true },
+    { skeleton: true },
+    { skeleton: true },
+    { skeleton: true },
+    { skeleton: true },
+    { skeleton: true },
+  ]);
+
+  const [itemOffset, setItemOffset] = useState(0);
+  const countInPage = 8;
+  const endOffset = itemOffset + countInPage;
+
+  const currentItems = data.slice(itemOffset, endOffset);
+  const pageCount = Math.ceil(data.length / countInPage);
+
+
+  const mapData = currentItems.map((data, index) => {
     return (
-      <NewsCard
+      <Course
         key={index}
-        id={item.id}
-        img={item.currentImageAddressTumb}
-        name={item.title}
-        skeleton={item.skeleton}
-        description={item.miniDescribe}
-        views={item.currentView}
-        date={item.updateDate}
+        id={data.courseId}
+        bio={data.describe}
+        skeleton={data.skeleton}
+        title={data.title}
+        courseCount={data.levelName}
+        time={data.statusName}
+        date={data.lastUpdate}
+        professorName={data.teacherName}
+        like={data.likeCount}
+        dissLike={data.dissLikeCount}
+        courseRate={data.courseRate}
+        studentCount={data.currentRegistrants}
+        price={data.cost}
+        addClass={"h-[441px] mx-auto max-[530px]:w-full"}
+        image={data.tumbImageAddress}
+        userIsLiked={data.userIsLiked}
+        userIsDissLiked={data.currentUserDissLike}
+        userFavorite={data.userFavorite}
+        userFavoriteId={data.userFavoriteId}
       />
     );
   });
+
   return (
     <Fragment>
       {/* <LoadingSpinner/> */}
@@ -134,7 +182,16 @@ const NewsList = () => {
             {isLoading ? (
               <LoadingSpinner />
             ) : (
-              <div className="news-card">{newsCardsMapper}</div>
+              // <div className="news-card">{mapData}</div>
+              <div
+              className={
+                "w-full flex relative flex-wrap transition-all pt-0 justify-end items-start gap-y-0 gap-3 duration-1000 aos-init aos-animate " 
+              }
+              data-aos="zoom-in"
+            >
+
+              {mapData}
+            </div>
             )}
           </section>
           <ReactPaginate

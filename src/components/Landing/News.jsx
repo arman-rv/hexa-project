@@ -4,6 +4,7 @@ import http from "../../core/services/interceptor";
 
 import NewsCard from "./NewsCard";
 import Title from "../common/Title";
+import CourseAutoplaySlider from "../course/CourseAutoplaySlider";
 const News = () => {
   const [newsList, setNewsList] = useState([
     { skeleton: true },
@@ -49,6 +50,7 @@ const News = () => {
       />
     );
   });
+  
   return (
     <section className="mb-28">
       <div className=" w-[440px] md:w-[740px] relative mt-20 lg:m-auto  mx-auto lg:mt-56 max-[480px]:w-full max-[480px]:px-2">
@@ -60,7 +62,12 @@ const News = () => {
         </Link>
       </div>
 
-      <div className="news-wrapper ">{newsCardsMapper}</div>
+      {/* <div className="news-wrapper ">{newsCardsMapper}</div> */}
+
+      <div className="mt-20 lg:mt-24 gap-4 lg:gap-3">
+        <CourseAutoplaySlider />
+      </div>
+
       {/* <Link to="/news" className={"text-newWhite hover:text-newWhite"}>
         <button className="primary-btn w-auto lg:w-56 lg:my-10 py-3 hidden md:hidden lg:block mx-auto">
           مشاهده ی همه
