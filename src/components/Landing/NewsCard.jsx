@@ -16,8 +16,9 @@ const NewsCard = ({ name, img, description, views, date, id, skeleton }) => {
         }
       >
         <Link to={id ? "/newsDetails/" + id : "/undefinedError"}>
-          <div className="absolute cursor-pointer group mr-[220px] md:mr-[260px] lg:mr-[265px] mt-1 md:mt-6 lg:mt-1 ">
-            <h2 className="news-name md:text-lg text-base text-newPurple3 group-hover:text-newPurple2 skeleton-handler pl-6 h-14 dark:text-[#e9e8ff] dark:group-hover:text-[#F0E2FF]">
+          <div className="absolute cursor-pointer group mr-[220px] md:mr-[260px] lg:mr-[265px] mt-1 md:mt-6 lg:mt-1 !overflow-hidden w-full">
+            {/* 
+          <h2 className="news-name md:text-lg text-base text-newPurple3 group-hover:text-newPurple2 skeleton-handler pl-6 h-14 dark:text-[#e9e8ff] dark:group-hover:text-[#F0E2FF]">
               {name ? name : ""}
             </h2>
             <div className="flex flex-row" >
@@ -27,7 +28,7 @@ const NewsCard = ({ name, img, description, views, date, id, skeleton }) => {
                 {views ? views + "بازدید" : ""}{" "}
               </h2>
               <div className="news-border h-[22px] mx-2 rotate-180  border  border-[#ABA6EF]"></div>
-              <h2 className="news-date text-indigo-900 text-xs dark:text-indigo-200 mt-[3px] mx-2 skeleton-handler">
+              <h2 className="news-date text-indigo-900 text-xs dark:text-indigo-200 mt-[3px] mx-2 skeleton-handler max-[440px]:hidden">
                 <i className="bi bi-calendar-event text-sm dark:text-indigo-200 ml-1"></i>
                 {date ? GregorianToSolar(date) : ""}
               </h2>
@@ -42,6 +43,20 @@ const NewsCard = ({ name, img, description, views, date, id, skeleton }) => {
               </h2>
 
               <i className="bi bi-arrow-left  text-xs md:text-base group-hover:text-[#9100DB] text-newPurple dark:text-indigo-300 dark:group-hover:text-[#B882FF] mt-1 mx-2"></i>
+            </div> */}
+            <div className="w-full flex flex-col gap-2">
+              <h2 className="news-name md:text-lg text-base text-newPurple3 group-hover:text-newPurple2 skeleton-handler pl-6 h-14 dark:text-[#e9e8ff] dark:group-hover:text-[#F0E2FF] max-2xl:!w-[2000%]">
+                {name ? name : ""}
+              </h2>
+              <h2 className="news-name md:text-lg text-base text-newPurple3 group-hover:text-newPurple2 skeleton-handler pl-6 h-14 dark:text-[#e9e8ff] dark:group-hover:text-[#F0E2FF] !w-[1000%]">
+                {name ? name : ""}
+              </h2>
+              <h2 className="news-name md:text-lg text-base text-newPurple3 group-hover:text-newPurple2 skeleton-handler pl-6 h-14 dark:text-[#e9e8ff] dark:group-hover:text-[#F0E2FF] !w-[600%]">
+                {name ? name : ""}
+              </h2>
+              <h2 className="news-name md:text-lg text-base text-newPurple3 group-hover:text-newPurple2 skeleton-handler pl-6 h-14 dark:text-[#e9e8ff] dark:group-hover:text-[#F0E2FF] !w-[1000%]">
+                {name ? name : ""}
+              </h2>
             </div>
           </div>
         </Link>

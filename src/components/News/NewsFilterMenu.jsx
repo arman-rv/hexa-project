@@ -31,7 +31,7 @@ const NewsFilterMenu = ({
           <i className="bi bi-filter"></i>
         </label>
       </div>
-      <ul className={" lg:flex flex-row w-[835px] h-12 rounded-[10px] my-auto text-base text-center text-lightblue border-2 dark:text-white border-lightblue dark:border-white"}>
+      <ul className={"hidden lg:flex flex-row w-[835px] h-12 rounded-[10px] my-auto text-base text-center text-lightblue border-2 dark:text-white border-lightblue dark:border-white"}>
         <li
           className="news-menu-box hover:rounded-r-lg"
           onClick={() => setSortCal("InsertDate")}
