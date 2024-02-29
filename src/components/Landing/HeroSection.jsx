@@ -35,26 +35,26 @@ const HeroSection = () => {
       <img src={heroImage} alt="hero Image" className="hero-image" />
       <div className="hero-gradient">
         
-        <h4>پلتفرم اموزش طراحی وب</h4>
-        <h2 className="text-[54px] max-[400px]:text-4xl">مرجع اموزش برنامه نویسی</h2>
-        <AutoTypeWriter Text={text} className={"hero-type-writer"} />
+        <h4 className="text-white">پلتفرم اموزش طراحی وب</h4>
+        <h2 className="text-[54px] max-[400px]:text-4xl text-white">مرجع اموزش برنامه نویسی</h2>
+        <AutoTypeWriter Text={text} className={"hero-type-writer text-white"} />
         <div className="max-[400px]:pt-1"></div>
         <HeroSearchBox />
         <div className="information-section">
           <div className="scale-[1.15] max-[400px]:scale-[1]">
             <img src={teacher} alt="مدرس" />
             <span>{Data.teacherCount?Data.teacherCount:'6'}</span>
-            <label className="px-2">مدرس مجرب</label>
+            <label className="px-2 text-white">مدرس مجرب</label>
           </div>
           <div className="scale-[1.15]">
             <img src={course} alt="دوره" />
             <span>{Data.courseCount?Data.courseCount:'10'}</span>
-            <label className="px-2">دوره آموزشی</label>
+            <label className="px-2  text-white">دوره آموزشی</label>
           </div>
           <div className="scale-[1.15]">
             <img src={student} alt="دانش آموز" />
             <span>{Data.studentCount?Data.studentCount: '23' }</span>
-            <label className="px-2">نفر دانشجو</label>
+            <label className="px-2  text-white">نفر دانشجو</label>
           </div>
         </div>
        
